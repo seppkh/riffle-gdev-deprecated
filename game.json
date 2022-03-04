@@ -192,71 +192,47 @@
     "resourceFolders": []
   },
   "objects": [],
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Cards",
+      "objects": [
+        {
+          "name": "Card1"
+        },
+        {
+          "name": "Card2"
+        },
+        {
+          "name": "Card3"
+        },
+        {
+          "name": "MainCard"
+        }
+      ]
+    },
+    {
+      "name": "Symbols",
+      "objects": [
+        {
+          "name": "symbol4"
+        },
+        {
+          "name": "symbol3"
+        },
+        {
+          "name": "symbol2"
+        },
+        {
+          "name": "symbol1"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "name": "score",
       "type": "number",
       "value": 0
-    },
-    {
-      "name": "mainCard",
-      "type": "structure",
-      "children": [
-        {
-          "name": "elements",
-          "type": "array",
-          "children": []
-        }
-      ]
-    },
-    {
-      "name": "card1",
-      "type": "structure",
-      "children": [
-        {
-          "name": "elements",
-          "type": "array",
-          "children": []
-        },
-        {
-          "name": "isMatch",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "name": "card2",
-      "type": "structure",
-      "children": [
-        {
-          "name": "elements",
-          "type": "array",
-          "children": []
-        },
-        {
-          "name": "isMatch",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "name": "card3",
-      "type": "structure",
-      "children": [
-        {
-          "name": "elements",
-          "type": "array",
-          "children": []
-        },
-        {
-          "name": "isMatch",
-          "type": "boolean",
-          "value": false
-        }
-      ]
     },
     {
       "name": "onPause",
@@ -282,6 +258,71 @@
       "name": "level",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "cardsSet",
+      "type": "structure",
+      "children": [
+        {
+          "name": "card1",
+          "type": "structure",
+          "children": [
+            {
+              "name": "elements",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "isMatch",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "card2",
+          "type": "structure",
+          "children": [
+            {
+              "name": "elements",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "isMatch",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "card3",
+          "type": "structure",
+          "children": [
+            {
+              "name": "elements",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "isMatch",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "mainCard",
+          "type": "structure",
+          "children": [
+            {
+              "name": "elements",
+              "type": "array",
+              "children": []
+            }
+          ]
+        }
+      ]
     }
   ],
   "layouts": [
