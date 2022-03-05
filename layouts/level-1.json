@@ -1,0 +1,1922 @@
+{
+  "b": 238,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Level_321",
+  "name": "Level 1",
+  "oglFOV": 90,
+  "oglZFar": 500,
+  "oglZNear": 1,
+  "r": 238,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 238,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.5,
+    "windowMask": false
+  },
+  "objectsGroups": [
+    {
+      "name": "symbols",
+      "objects": [
+        {
+          "name": "symbol1"
+        },
+        {
+          "name": "symbol2"
+        },
+        {
+          "name": "symbol3"
+        },
+        {
+          "name": "symbol4"
+        }
+      ]
+    },
+    {
+      "name": "cards",
+      "objects": [
+        {
+          "name": "Sea"
+        },
+        {
+          "name": "subCard"
+        },
+        {
+          "name": "mainCard"
+        }
+      ]
+    },
+    {
+      "name": "placeholders",
+      "objects": []
+    }
+  ],
+  "variables": [
+    {
+      "name": "timeCounter",
+      "type": "number",
+      "value": 60
+    },
+    {
+      "name": "cardsSet",
+      "type": "structure",
+      "children": [
+        {
+          "name": "card1",
+          "type": "structure",
+          "children": [
+            {
+              "name": "elements",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "symbol1"
+                }
+              ]
+            },
+            {
+              "name": "isMatch",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "card2",
+          "type": "structure",
+          "children": [
+            {
+              "name": "elements",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "isMatch",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "card3",
+          "type": "structure",
+          "children": [
+            {
+              "name": "elements",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "isMatch",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "mainCard",
+          "type": "structure",
+          "children": [
+            {
+              "name": "elements",
+              "type": "array",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "numberOfElements",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "maxMatchingElements",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "onCardVariables",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": "mainCard"
+        },
+        {
+          "type": "string",
+          "value": "card1"
+        },
+        {
+          "type": "string",
+          "value": "card2"
+        },
+        {
+          "type": "string",
+          "value": "card3"
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Box backgrounds",
+      "locked": true,
+      "name": "mainCard",
+      "persistentUuid": "b458c780-0ca1-4222-b3d5-c21e0f6162c8",
+      "width": 0,
+      "x": 228,
+      "y": 37,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Variable",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Box backgrounds",
+      "locked": true,
+      "name": "subCard",
+      "persistentUuid": "e9a79771-50ee-4551-97c1-5e7175129f24",
+      "width": 0,
+      "x": 17,
+      "y": 284,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 70,
+      "layer": "UI",
+      "locked": false,
+      "name": "symbol2",
+      "persistentUuid": "073dd882-4721-4385-9402-97bb014837eb",
+      "width": 70,
+      "x": 826,
+      "y": -46,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 70,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "aea42d5d-30cf-45db-a4ab-7ef51e0c5da0",
+      "width": 70,
+      "x": 274,
+      "y": 77,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "mainCard"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 70,
+      "layer": "UI",
+      "locked": false,
+      "name": "symbol1",
+      "persistentUuid": "87054521-587c-4773-a548-bed812b1f181",
+      "width": 70,
+      "x": 819,
+      "y": 153,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 70,
+      "layer": "UI",
+      "locked": false,
+      "name": "symbol3",
+      "persistentUuid": "86f27ff0-8a49-4ecc-81b4-cd1b3c84f3a5",
+      "width": 70,
+      "x": 829,
+      "y": 64,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 70,
+      "layer": "UI",
+      "locked": false,
+      "name": "symbol4",
+      "persistentUuid": "b7576f46-35b4-49f3-990a-cf5cfd7d13f5",
+      "width": 70,
+      "x": 831,
+      "y": 278,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 600,
+      "layer": "Fade",
+      "locked": false,
+      "name": "screen_fade",
+      "persistentUuid": "cd9b5efb-154d-4c89-b4d4-c9f4d04876c3",
+      "width": 800,
+      "x": 0,
+      "y": 0,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Fade",
+      "locked": false,
+      "name": "ui_background",
+      "persistentUuid": "c6e22c04-0630-4187-ad00-98f80e808f00",
+      "width": 0,
+      "x": 0,
+      "y": 1,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 600,
+      "layer": "Background",
+      "locked": true,
+      "name": "YellowBackground",
+      "persistentUuid": "ce333b6f-ed08-47d1-b915-cf2dc8c6fb5d",
+      "width": 800,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 200,
+      "layer": "Box backgrounds",
+      "locked": true,
+      "name": "Sea",
+      "persistentUuid": "d4040e42-e7f6-4d0e-9c46-1a62514d9caf",
+      "width": 240,
+      "x": 22,
+      "y": 291,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 200,
+      "layer": "Box backgrounds",
+      "locked": true,
+      "name": "Sea",
+      "persistentUuid": "a11598d7-18fa-4660-a8f1-a9de13487a16",
+      "width": 240,
+      "x": 283,
+      "y": 291,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 200,
+      "layer": "Box backgrounds",
+      "locked": true,
+      "name": "Sea",
+      "persistentUuid": "1964aaa0-5d86-4885-a880-626de3c97618",
+      "width": 240,
+      "x": 544,
+      "y": 291,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 215,
+      "layer": "Box backgrounds",
+      "locked": true,
+      "name": "Sea",
+      "persistentUuid": "8f093b08-07e9-4fad-aab8-b4ddb039e313",
+      "width": 335,
+      "x": 236,
+      "y": 45,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Box backgrounds",
+      "locked": true,
+      "name": "subCard",
+      "persistentUuid": "3363c19c-e722-41ab-976e-b3d599d08e8f",
+      "width": 0,
+      "x": 278,
+      "y": 284,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Box backgrounds",
+      "locked": true,
+      "name": "subCard",
+      "persistentUuid": "b48cc28e-d611-48b8-9f34-85224a098fbf",
+      "width": 0,
+      "x": 540,
+      "y": 284,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 70,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "d354beef-1aa3-4ccd-86f1-df6524266eee",
+      "width": 70,
+      "x": 362,
+      "y": 71,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "mainCard"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 70,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "8a62cf91-7f0e-41de-a924-68d8acd0066a",
+      "width": 70,
+      "x": 486,
+      "y": 84,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "mainCard"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 70,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "65339a5c-86f2-44df-b24b-1c50d0558137",
+      "width": 70,
+      "x": 454,
+      "y": 176,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "mainCard"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 70,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "3afab1c8-b51f-42c3-b31e-d4fd670eea24",
+      "width": 70,
+      "x": 378,
+      "y": 146,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "mainCard"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 70,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "2063f2dc-a4ff-4aa0-a555-50522e035e80",
+      "width": 70,
+      "x": 294,
+      "y": 179,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "mainCard"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "c611edd7-1502-4c16-bb84-4c1178a557c8",
+      "width": 40,
+      "x": 58,
+      "y": 326,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card1"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "8511644f-5299-41e2-b958-65da5e1175a8",
+      "width": 40,
+      "x": 398,
+      "y": 359,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2\n"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "a18f0db7-7b0a-4294-b413-53f8720dd693",
+      "width": 40,
+      "x": 453,
+      "y": 420,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2\n"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "1db79cd2-f244-455b-a3f8-a09c2c944f76",
+      "width": 40,
+      "x": 329,
+      "y": 324,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2\n"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "35849606-6a55-49cc-9ed2-4c4e747dddf6",
+      "width": 40,
+      "x": 311,
+      "y": 379,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2\n"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "e48d99c6-f25e-488e-b9a4-e2b7e39b04ec",
+      "width": 40,
+      "x": 372,
+      "y": 422,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2\n"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "41cca948-ee24-4f62-865a-0ef6daf6e7e6",
+      "width": 40,
+      "x": 581,
+      "y": 324,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2\n"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "0ee39a8a-56cc-462d-a7d2-93fd4c8bacce",
+      "width": 40,
+      "x": 665,
+      "y": 313,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2\n"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "e304155a-37bf-4cfa-bb65-6843058a7bee",
+      "width": 40,
+      "x": 715,
+      "y": 374,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2\n"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "9fc2177b-0a92-4dac-9019-131330edf349",
+      "width": 40,
+      "x": 659,
+      "y": 407,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2\n"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "246de1ff-a2b7-48de-b30a-fdf71321aa41",
+      "width": 40,
+      "x": 591,
+      "y": 387,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2\n"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "d90d81b5-0578-45a5-bdf7-be5a3adc6478",
+      "width": 40,
+      "x": 186.3125,
+      "y": 421.5625,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card1"
+        },
+        {
+          "name": "isUsed",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "1fd66c72-705d-4717-98ce-bf4d356ea9ea",
+      "width": 40,
+      "x": 48,
+      "y": 433,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card1"
+        },
+        {
+          "name": "isUsed",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "4d266a78-0e0c-47f4-96f1-134a7bef1fae",
+      "width": 40,
+      "x": 142,
+      "y": 304,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card1"
+        },
+        {
+          "name": "isUsed",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "1d9fa3ba-6b0f-4508-bac4-0f17fef16a0c",
+      "width": 40,
+      "x": 196,
+      "y": 359,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card1"
+        },
+        {
+          "name": "isUsed",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder",
+      "persistentUuid": "f26afe77-49bc-4664-a222-0c0912755430",
+      "width": 40,
+      "x": 114,
+      "y": 396,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card1"
+        },
+        {
+          "name": "isUsed",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "name": "symbol4",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "isPlaced",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "stillCard",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "symbol-files/stillCard-1-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "symbol3",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "isPlaced",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "stillCard",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "symbol-files/stillCard-1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "symbol2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "isPlaced",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "stillCard",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "symbol-files/stillCard-1-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "symbol1",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "isPlaced",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "stillCard",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "symbol-files/stillCard-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "subCard",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlexContainer",
+          "type": "FlexBox::FlexContainer",
+          "ID": "CardArea",
+          "Direction": "right",
+          "Wrap": "wrap",
+          "JustifyContent": "space-around",
+          "AlignItems": "center",
+          "AlignContent": "space-around",
+          "Gap": 0
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "img_468929",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "symbol-files/img_468929-1-4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mainCard",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlexContainer",
+          "type": "FlexBox::FlexContainer",
+          "ID": "CardArea",
+          "Direction": "right",
+          "Wrap": "wrap",
+          "JustifyContent": "space-around",
+          "AlignItems": "center",
+          "AlignContent": "space-around",
+          "Gap": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "img_468929",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "symbol-files/img_468929-1-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BouncyBall",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewObject",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "position_placeholder",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "position_placeholder",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "symbol-files/position_placeholder-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 134.9921875,
+                    "y": 112.56640625
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "screen_fade",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "screen_fade",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "screen_fade-1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ui_background",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "screen_fade",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "screen_fade-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "height": 128,
+      "name": "YellowBackground",
+      "tags": "",
+      "texture": "tiled_Yellow background.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 128,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "height": 128,
+      "name": "Sea",
+      "tags": "",
+      "texture": "tiled_sea.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 128,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    }
+  ],
+  "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Fade\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectOpacityTween"
+          },
+          "parameters": [
+            "screen_fade",
+            "Tween",
+            "\"fade_in\"",
+            "0",
+            "\"linear\"",
+            "500",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Background\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Box backgrounds\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"UI\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "numberOfElements",
+            "=",
+            "3"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "maxMatchingElements",
+            "=",
+            "1"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::ForEachChildVariable",
+      "iterableVariableName": "onCardVariables",
+      "valueIteratorVariableName": "cardName",
+      "keyIteratorVariableName": "",
+      "conditions": [],
+      "actions": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjetTxt"
+              },
+              "parameters": [
+                "position_placeholder",
+                "onCard",
+                "=",
+                "VariableString(cardName)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "position_placeholder",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "position_placeholder",
+                    "isUsed",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AjoutHasard"
+                  },
+                  "parameters": [
+                    "",
+                    "position_placeholder"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "position_placeholder",
+                    "isUsed",
+                    "True"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "position_placeholder",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "symbols",
+                        "isPlaced",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "symbols",
+                        "=",
+                        "position_placeholder.X()",
+                        "=",
+                        "position_placeholder.Y()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "symbolScaleMultiply",
+                        "=",
+                        "RandomFloatInRange(0.6,1.8)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectScaleTween"
+                      },
+                      "parameters": [
+                        "symbols",
+                        "Tween",
+                        "\"symbolCreate\"",
+                        "symbols.ScaleX()*Variable(symbolScaleMultiply)",
+                        "symbols.ScaleX()*Variable(symbolScaleMultiply)",
+                        "\"easeOutBounce\"",
+                        "1500",
+                        "",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "symbols"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ToggleObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "symbols",
+                            "isPlaced"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Tween::AddObjectOpacityTween"
+          },
+          "parameters": [
+            "screen_fade",
+            "Tween",
+            "\"fade_in\"",
+            "90",
+            "\"linear\"",
+            "1000",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [],
+      "events": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 32,
+      "ambientLightColorG": 0,
+      "ambientLightColorR": 0,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": -2147483632,
+      "ambientLightColorG": 6031360,
+      "ambientLightColorR": 8208072,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Background",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 50331648,
+      "ambientLightColorG": 6031360,
+      "ambientLightColorR": 8184584,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Box backgrounds",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": -2147483632,
+      "ambientLightColorG": 6031360,
+      "ambientLightColorR": 7566200,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "UI",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 8132936,
+      "ambientLightColorG": 6031360,
+      "ambientLightColorR": 7473064,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Fade",
+      "visibility": false,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "FlexContainer",
+      "type": "FlexBox::FlexContainer"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}
