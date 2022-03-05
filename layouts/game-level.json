@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Untitled_32scene",
-  "name": "Untitled scene",
+  "mangledName": "Game_32Level",
+  "name": "Game Level",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
@@ -12,7 +12,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -20,51 +20,18 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
+    "snap": true,
     "zoomFactor": 1,
-    "windowMask": false
+    "windowMask": true
   },
-  "objectsGroups": [
+  "objectsGroups": [],
+  "variables": [
     {
-      "name": "Symbols",
-      "objects": [
-        {
-          "name": "symbol4"
-        },
-        {
-          "name": "symbol3"
-        },
-        {
-          "name": "symbol2"
-        },
-        {
-          "name": "symbol1"
-        }
-      ]
-    },
-    {
-      "name": "Cards",
-      "objects": [
-        {
-          "name": "Card1"
-        },
-        {
-          "name": "Card2"
-        },
-        {
-          "name": "Card3"
-        },
-        {
-          "name": "MainCard"
-        }
-      ]
-    },
-    {
-      "name": "Group",
-      "objects": []
+      "name": "timeCounter",
+      "type": "number",
+      "value": 60
     }
   ],
-  "variables": [],
   "instances": [
     {
       "angle": 0,
@@ -132,6 +99,38 @@
       "x": 539,
       "y": 283,
       "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "BouncyBall",
+      "persistentUuid": "fd85f27c-50ba-49c2-a4e1-fb3000037d24",
+      "width": 0,
+      "x": 384,
+      "y": 160,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "locked": false,
+      "name": "symbol3",
+      "persistentUuid": "82d87716-af9d-4da6-b10f-ebbfe04d2135",
+      "width": 128,
+      "x": 352,
+      "y": 320,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -569,9 +568,173 @@
           ]
         }
       ]
+    },
+    {
+      "name": "BouncyBall",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewObject",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewObject-4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "numberOfElements",
+            "=",
+            "2"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "maxMatchingElements",
+            "=",
+            "1"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::JsCode",
+      "inlineCode": "runtimeScene.setBackgroundColor(100,100,240);\n\n// set number of elements on each card\nvar numberOfElements = runtimeScene.getVariables().get(\"numberOfElements\");\n// set number of matching elements on the correct card\nvar maxMatchingElements = runtimeScene.getVariables().get(\"maxMatchingElements\");\n\n// assign GDev global variable \"cardsSet\" in JS script\nvar cardsSet = runtimeScene.getVariables().get(\"cardsSet\");\n \n\n// create list of available numbers:\n// var numbersArr = Array.from(Array(50).keys());\n\nvar numbersArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];\n \n/*\n// create as set of 4 cards for the gameplay:\nvar cardsSet = {\n  mainCard: {\n    elements: []\n  },\n  card1: {\n    elements: [],\n    isMatch: false\n  },\n  card2: {\n    elements: [],\n    isMatch: false\n  },\n  card3: {\n    elements: [],\n    isMatch: false\n  }\n}; */\n\n// creates a new array of n random numbers from a given list of numbers\nfunction getRandom(arr, n) {\n  var result = new Array(n),\n      len = arr.length,\n      taken = new Array(len);\n  if (n > len)\n      throw new RangeError(\"getRandom: more elements taken than available\");\n  while (n--) {\n      var x = Math.floor(Math.random() * len);\n      result[n] = arr[x in taken ? taken[x] : x];\n      taken[x] = --len in taken ? taken[len] : len;\n  }\n  return result;\n}\n\n// creates a new array with y matching numbers with mainCard and n random numbers are not in mainCard\nfunction includeSomeThenGetRandom(numbersArr, n, mainArr, y) {\n  if (y > n)\n      throw new RangeError(\"includeSomeThenGetRandom: more elements being matched than in main array\");\n  var result = new Array(n);\n  var matchingElements = mainArr.slice(0,y);\n  var noMatchingElements = new Array(n - y);\n\n  var numbersArrWithoutMainArr = numbersArr.filter(x => !mainArr.includes(x));\n\n  noMatchingElements = getRandom(numbersArrWithoutMainArr, n-y);\n\n  // add matching elements and not matching elements together into one array\n  result = matchingElements.concat(noMatchingElements);\n\n  return result;\n};\n\n// function to get a random number to decrease matching elements on incorrect cards\nfunction getRandomInt(max) {\n  var min = 1;\n  max = Math.floor(max);\n  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive\n}\n\n// create and save values for each card :\nfunction createCards(numberOfElements, maxMatching) {\n  var mainCard = getRandom(numbersArr, numberOfElements);\n  var card1 = includeSomeThenGetRandom(numbersArr, numberOfElements, mainCard, maxMatching);\n  var card2 = includeSomeThenGetRandom(numbersArr, numberOfElements, mainCard, maxMatching - getRandomInt(maxMatching));\n  var card3 = includeSomeThenGetRandom(numbersArr, numberOfElements, mainCard, maxMatching - getRandomInt(maxMatching));\n\n  cardsSet = {\n    mainCard: {\n      elements: mainCard\n    },\n    card1: {\n      elements: card1,\n      isMatch: true\n    },\n    card2: {\n      elements: card2,\n      isMatch: false\n    },\n    card3: {\n      elements: card3,\n      isMatch: false\n    },\n  };\n  \n  return cardsSet;\n};\n\ncardsSet = createCards(numberOfElements, maxMatchingElements);\n\ncardsSet\n\nruntimeScene.getVariables().get(\"cardsSet.card1.elements\") = cardsSet\n\n",
+      "parameterObjects": "",
+      "useStrict": true,
+      "eventsSheetExpanded": true
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "\"GlobalVariableString(cardsSet)\"",
+            "\"info\"",
+            "GlobalVariableString(cardsSet)"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
     {
       "disabled": false,
       "folded": false,
