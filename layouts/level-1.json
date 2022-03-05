@@ -1682,6 +1682,21 @@
     {
       "disabled": false,
       "folded": false,
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Following part is in work! It should create symbols on each card according to each elements in \"onCardVariables\" array. Right now it's not working properly yet",
+      "comment2": ""
+    },
+    {
+      "disabled": false,
+      "folded": false,
       "type": "BuiltinCommonInstructions::ForEachChildVariable",
       "iterableVariableName": "onCardVariables",
       "valueIteratorVariableName": "cardName",
@@ -1894,6 +1909,17 @@
             "\"linear\"",
             "1000",
             ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "PushScene"
+          },
+          "parameters": [
+            "",
+            "\"Level 1\""
           ],
           "subInstructions": []
         }
