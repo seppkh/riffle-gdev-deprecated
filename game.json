@@ -402,6 +402,11 @@
       "name": "level",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "activePlaceholder",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [

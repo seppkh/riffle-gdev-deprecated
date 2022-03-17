@@ -46,19 +46,103 @@
       "name": "cards",
       "objects": [
         {
-          "name": "Sea"
-        },
-        {
-          "name": "subCard"
-        },
-        {
           "name": "mainCard"
+        },
+        {
+          "name": "card1"
+        },
+        {
+          "name": "card2"
+        },
+        {
+          "name": "card3"
         }
       ]
     },
     {
       "name": "placeholders",
-      "objects": []
+      "objects": [
+        {
+          "name": "position_placeholder_mainCard"
+        },
+        {
+          "name": "position_placeholder_card1"
+        },
+        {
+          "name": "position_placeholder_card2"
+        },
+        {
+          "name": "position_placeholder_card3"
+        }
+      ]
+    },
+    {
+      "name": "symbols_mainCard",
+      "objects": [
+        {
+          "name": "symbol1"
+        },
+        {
+          "name": "symbol2"
+        },
+        {
+          "name": "symbol3"
+        },
+        {
+          "name": "symbol4"
+        }
+      ]
+    },
+    {
+      "name": "symbols_card1",
+      "objects": [
+        {
+          "name": "symbol1"
+        },
+        {
+          "name": "symbol2"
+        },
+        {
+          "name": "symbol3"
+        },
+        {
+          "name": "symbol4"
+        }
+      ]
+    },
+    {
+      "name": "symbols_card2",
+      "objects": [
+        {
+          "name": "symbol1"
+        },
+        {
+          "name": "symbol2"
+        },
+        {
+          "name": "symbol3"
+        },
+        {
+          "name": "symbol4"
+        }
+      ]
+    },
+    {
+      "name": "symbols_card3",
+      "objects": [
+        {
+          "name": "symbol1"
+        },
+        {
+          "name": "symbol2"
+        },
+        {
+          "name": "symbol3"
+        },
+        {
+          "name": "symbol4"
+        }
+      ]
     }
   ],
   "variables": [
@@ -168,47 +252,14 @@
           "value": "card3"
         }
       ]
+    },
+    {
+      "name": "currentCard",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Box backgrounds",
-      "locked": true,
-      "name": "mainCard",
-      "persistentUuid": "b458c780-0ca1-4222-b3d5-c21e0f6162c8",
-      "width": 0,
-      "x": 228,
-      "y": 37,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Variable",
-          "type": "string",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Box backgrounds",
-      "locked": true,
-      "name": "subCard",
-      "persistentUuid": "e9a79771-50ee-4551-97c1-5e7175129f24",
-      "width": 0,
-      "x": 17,
-      "y": 284,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": false,
@@ -224,33 +275,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 70,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "aea42d5d-30cf-45db-a4ab-7ef51e0c5da0",
-      "width": 70,
-      "x": 265,
-      "y": 71,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "mainCard"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
     },
     {
       "angle": 0,
@@ -351,58 +375,10 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 200,
-      "layer": "Box backgrounds",
-      "locked": true,
-      "name": "Sea",
-      "persistentUuid": "d4040e42-e7f6-4d0e-9c46-1a62514d9caf",
-      "width": 240,
-      "x": 22,
-      "y": 291,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 200,
-      "layer": "Box backgrounds",
-      "locked": true,
-      "name": "Sea",
-      "persistentUuid": "a11598d7-18fa-4660-a8f1-a9de13487a16",
-      "width": 240,
-      "x": 283,
-      "y": 291,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 200,
-      "layer": "Box backgrounds",
-      "locked": true,
-      "name": "Sea",
-      "persistentUuid": "1964aaa0-5d86-4885-a880-626de3c97618",
-      "width": 240,
-      "x": 544,
-      "y": 291,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "height": 215,
       "layer": "Box backgrounds",
       "locked": true,
-      "name": "Sea",
+      "name": "mainCard",
       "persistentUuid": "8f093b08-07e9-4fad-aab8-b4ddb039e313",
       "width": 335,
       "x": 236,
@@ -416,14 +392,14 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "Box backgrounds",
-      "locked": true,
-      "name": "subCard",
-      "persistentUuid": "3363c19c-e722-41ab-976e-b3d599d08e8f",
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder_mainCard",
+      "persistentUuid": "17b983e8-95cc-498b-8356-c6c6342ffd54",
       "width": 0,
-      "x": 278,
-      "y": 284,
-      "zOrder": 3,
+      "x": 295,
+      "y": 84,
+      "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -432,14 +408,142 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "Box backgrounds",
-      "locked": true,
-      "name": "subCard",
-      "persistentUuid": "b48cc28e-d611-48b8-9f34-85224a098fbf",
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder_card1",
+      "persistentUuid": "269e4211-9698-4b28-9ea3-445b76f8d675",
       "width": 0,
-      "x": 540,
-      "y": 284,
-      "zOrder": 3,
+      "x": 73,
+      "y": 330,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder_card2",
+      "persistentUuid": "7ae4f430-4afc-40ab-842b-1ea6a19b0399",
+      "width": 0,
+      "x": 342,
+      "y": 322,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder_card3",
+      "persistentUuid": "2072cae8-a1a2-4959-973f-ec164339c2d2",
+      "width": 0,
+      "x": 686,
+      "y": 329,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder_mainCard",
+      "persistentUuid": "fee748e6-5654-4240-b358-42bdc7c94e28",
+      "width": 0,
+      "x": 425,
+      "y": 78,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder_card1",
+      "persistentUuid": "371ae903-4ff6-46af-912e-4aa2f227daf0",
+      "width": 0,
+      "x": 157,
+      "y": 389,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder_card2",
+      "persistentUuid": "edd539a7-7472-498f-8312-4ef3e6c9b278",
+      "width": 0,
+      "x": 386,
+      "y": 409,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder_card3",
+      "persistentUuid": "bdde0d86-b5c6-44c5-b01a-3f25a1bf6cc4",
+      "width": 0,
+      "x": 576,
+      "y": 381,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder_mainCard",
+      "persistentUuid": "f5944074-3533-4cec-a5dd-89a3de942df5",
+      "width": 0,
+      "x": 357,
+      "y": 164,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "locked": false,
+      "name": "position_placeholder_mainCard",
+      "persistentUuid": "b289eaca-4a46-4beb-bc7f-76fbcb02b9f7",
+      "width": 0,
+      "x": 460,
+      "y": 174,
+      "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -447,569 +551,50 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 40,
-      "layer": "UI",
+      "height": 200,
+      "layer": "Box backgrounds",
       "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "4d266a78-0e0c-47f4-96f1-134a7bef1fae",
-      "width": 40,
-      "x": 142,
-      "y": 304,
-      "zOrder": 4,
+      "name": "card1",
+      "persistentUuid": "66ceb091-2f38-4c54-a069-99d1f963b884",
+      "width": 240,
+      "x": 20,
+      "y": 292,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card1"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 70,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "6e8c43a0-7932-448f-91cd-caecb1e272ee",
-      "width": 70,
-      "x": 376,
-      "y": 100,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "mainCard"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 70,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "05894813-1c4b-4325-b4d0-aa5f47ce3fca",
-      "width": 70,
-      "x": 469,
-      "y": 72,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "mainCard"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 70,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "85d86838-19d3-4954-a41b-9a5f381d680b",
-      "width": 70,
-      "x": 457,
-      "y": 182,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "mainCard"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 70,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "80520b62-3ed5-49c2-a9ac-519cf68cce5b",
-      "width": 70,
-      "x": 340,
-      "y": 171,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "mainCard"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 70,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "571f1e5d-80dd-48fa-bca7-15b4168dd869",
-      "width": 70,
-      "x": 258,
-      "y": 185,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "mainCard"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
+      "initialVariables": []
     },
     {
       "angle": 0,
       "customSize": true,
-      "height": 40,
-      "layer": "UI",
+      "height": 200,
+      "layer": "Box backgrounds",
       "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "cb434538-9bc0-480c-98a2-487eef51321b",
-      "width": 40,
-      "x": 201,
-      "y": 340,
-      "zOrder": 4,
+      "name": "card2",
+      "persistentUuid": "95b98adf-1687-461b-a468-7743c72bb83b",
+      "width": 240,
+      "x": 280,
+      "y": 293,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card1"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
+      "initialVariables": []
     },
     {
       "angle": 0,
       "customSize": true,
-      "height": 40,
-      "layer": "UI",
+      "height": 200,
+      "layer": "Box backgrounds",
       "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "23a439fc-601f-4dc9-8192-0bd80ac88a56",
-      "width": 40,
-      "x": 184,
-      "y": 421,
-      "zOrder": 4,
+      "name": "card3",
+      "persistentUuid": "a198eeb1-6f4d-4774-8028-5f8d55c857f5",
+      "width": 240,
+      "x": 544,
+      "y": 293,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card1"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "62612b8b-d019-49c2-914b-6c753d73358b",
-      "width": 40,
-      "x": 108,
-      "y": 373,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card1"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "27924080-608f-4fd0-adb9-92cd1f3f7d27",
-      "width": 40,
-      "x": 41,
-      "y": 311,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card1"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "888df148-0ba6-4de9-aa79-022480d0301f",
-      "width": 40,
-      "x": 46,
-      "y": 432,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card1"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "23bbf164-6505-4d64-a21c-c0cf7e8a9918",
-      "width": 40,
-      "x": 316,
-      "y": 384,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card2"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "f375421e-acd8-48a5-853d-a34b736953be",
-      "width": 40,
-      "x": 325,
-      "y": 325,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card2"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "dd3d1d7d-0816-42eb-8471-41233b3816eb",
-      "width": 40,
-      "x": 392,
-      "y": 372,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card2"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "6a865806-87fd-4b8d-bf86-f08c325bc639",
-      "width": 40,
-      "x": 448,
-      "y": 334,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card2"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "836e0caa-db82-4770-9dfe-32b0a7a086c6",
-      "width": 40,
-      "x": 429,
-      "y": 428,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card2"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "6c74cd8e-4465-4eb0-928d-15af521e2cbf",
-      "width": 40,
-      "x": 678,
-      "y": 402,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card3"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "10f95019-382b-49cf-943f-4c20c27e5262",
-      "width": 40,
-      "x": 569,
-      "y": 367,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card3"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "cecba675-ccfe-4e0c-8abb-bf0fad524cde",
-      "width": 40,
-      "x": 698,
-      "y": 328,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card3"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "1c720db1-2233-4881-ad62-47ce65f47184",
-      "width": 40,
-      "x": 608,
-      "y": 426,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card3"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "UI",
-      "locked": false,
-      "name": "position_placeholder",
-      "persistentUuid": "e73f9a29-0313-4b9a-93c3-ad4af489d4fe",
-      "width": 40,
-      "x": 626,
-      "y": 316,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "onCard",
-          "type": "string",
-          "value": "card3"
-        },
-        {
-          "name": "isUsed",
-          "type": "boolean",
-          "value": false
-        }
-      ]
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1218,24 +803,24 @@
       ]
     },
     {
-      "name": "subCard",
+      "name": "position_placeholder_card3",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card3"
+        },
+        {
+          "name": "isUsed",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
-        {
-          "name": "FlexContainer",
-          "type": "FlexBox::FlexContainer",
-          "ID": "CardArea",
-          "Direction": "right",
-          "Wrap": "wrap",
-          "JustifyContent": "space-around",
-          "AlignItems": "center",
-          "AlignContent": "space-around",
-          "Gap": 0
-        },
         {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
@@ -1243,7 +828,7 @@
       ],
       "animations": [
         {
-          "name": "img_468929",
+          "name": "position_placeholder",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1252,7 +837,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "symbol-files/img_468929-1-4.png",
+                  "image": "symbol-files/position_placeholder-1-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1262,8 +847,8 @@
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 134.9921875,
+                    "y": 112.56640625
                   },
                   "customCollisionMask": []
                 }
@@ -1274,28 +859,32 @@
       ]
     },
     {
-      "name": "mainCard",
+      "name": "position_placeholder_card2",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card2"
+        },
+        {
+          "name": "isUsed",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
-          "name": "FlexContainer",
-          "type": "FlexBox::FlexContainer",
-          "ID": "CardArea",
-          "Direction": "right",
-          "Wrap": "wrap",
-          "JustifyContent": "space-around",
-          "AlignItems": "center",
-          "AlignContent": "space-around",
-          "Gap": 0
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
         {
-          "name": "img_468929",
+          "name": "position_placeholder",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1304,7 +893,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "symbol-files/img_468929-1-2.png",
+                  "image": "symbol-files/position_placeholder-1-0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1314,8 +903,8 @@
                   "centerPoint": {
                     "automatic": true,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 134.9921875,
+                    "y": 112.56640625
                   },
                   "customCollisionMask": []
                 }
@@ -1326,11 +915,78 @@
       ]
     },
     {
-      "name": "position_placeholder",
+      "name": "position_placeholder_card1",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "card1"
+        },
+        {
+          "name": "isUsed",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "position_placeholder",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "symbol-files/position_placeholder-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 134.9921875,
+                    "y": 112.56640625
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "position_placeholder_mainCard",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "onCard",
+          "type": "string",
+          "value": "mainCard"
+        },
+        {
+          "name": "isUsed",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -1473,7 +1129,40 @@
     },
     {
       "height": 128,
-      "name": "Sea",
+      "name": "card3",
+      "tags": "",
+      "texture": "tiled_sea.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 128,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "height": 128,
+      "name": "card2",
+      "tags": "",
+      "texture": "tiled_sea.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 128,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "height": 128,
+      "name": "card1",
+      "tags": "",
+      "texture": "tiled_sea.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 128,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "height": 128,
+      "name": "mainCard",
       "tags": "",
       "texture": "tiled_sea.png",
       "type": "TiledSpriteObject::TiledSprite",
@@ -1606,83 +1295,31 @@
     {
       "disabled": false,
       "folded": false,
-      "type": "BuiltinCommonInstructions::ForEachChildVariable",
-      "iterableVariableName": "onCardVariables",
-      "valueIteratorVariableName": "cardName",
-      "keyIteratorVariableName": "",
-      "conditions": [
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "cards",
+      "conditions": [],
+      "actions": [
         {
           "type": {
             "inverted": false,
-            "value": "VarObjetTxt"
+            "value": "ModVarSceneTxt"
           },
           "parameters": [
-            "position_placeholder",
-            "onCard",
+            "currentCard",
             "=",
-            "VariableString(cardName)"
+            "cards.ObjectName()"
           ],
           "subInstructions": []
         }
       ],
-      "actions": [],
       "events": [
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "position_placeholder",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "position_placeholder",
-                "isUsed",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "AjoutHasard"
-              },
-              "parameters": [
-                "",
-                "position_placeholder"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "position_placeholder",
-                "isUsed",
-                "True"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Opacity"
-              },
-              "parameters": [
-                "position_placeholder",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            }
-          ],
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "numberOfElements",
+          "conditions": [],
+          "actions": [],
           "events": [
             {
               "disabled": false,
@@ -1692,12 +1329,24 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "placeholders.ObjectName()",
+                    "=",
+                    "\"position_placeholder_\"+VariableString(currentCard)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "ObjectVariableAsBoolean"
                   },
                   "parameters": [
-                    "symbols",
-                    "isPlaced",
-                    "False"
+                    "placeholders.ObjectName()",
+                    "isUsed",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -1706,44 +1355,35 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreXY"
+                    "value": "AjoutHasard"
                   },
                   "parameters": [
-                    "symbols",
-                    "=",
-                    "position_placeholder.X()",
-                    "=",
-                    "position_placeholder.Y()"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "symbolScaleMultiply",
-                    "=",
-                    "RandomFloatInRange(0.6,1.8)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Tween::AddObjectScaleTween"
-                  },
-                  "parameters": [
-                    "symbols",
-                    "Tween",
-                    "\"symbolCreate\"",
-                    "symbols.ScaleX()*Variable(symbolScaleMultiply)",
-                    "symbols.ScaleX()*Variable(symbolScaleMultiply)",
-                    "\"easeOutBounce\"",
-                    "1500",
                     "",
-                    "yes"
+                    "placeholders.ObjectName()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "placeholders.ObjectName()",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "placeholders.ObjectName()",
+                    "isUsed",
+                    "True"
                   ],
                   "subInstructions": []
                 }
@@ -1752,16 +1392,26 @@
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "AjoutHasard"
+                        "value": "ObjectVariableAsBoolean"
                       },
                       "parameters": [
-                        "",
-                        "symbols"
+                        "symbols_mainCard",
+                        "isPlaced",
+                        "False"
                       ],
                       "subInstructions": []
                     }
@@ -1770,20 +1420,158 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ToggleObjectVariableAsBoolean"
+                        "value": "CreateByName"
                       },
                       "parameters": [
+                        "",
                         "symbols",
-                        "isPlaced"
+                        "\"symbol-one\"",
+                        "position_placeholder_mainCard.X()",
+                        "position_placeholder_mainCard.Y()",
+                        "\"UI\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "symbols_mainCard",
+                        "=",
+                        "position_placeholder_mainCard.X()",
+                        "=",
+                        "position_placeholder_mainCard.Y()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "symbolScaleMultiply",
+                        "=",
+                        "RandomFloatInRange(0.6,1.8)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectScaleTween"
+                      },
+                      "parameters": [
+                        "symbols_mainCard",
+                        "Tween",
+                        "\"symbolCreate\"",
+                        "symbols_mainCard.ScaleX() * Variable(symbolScaleMultiply)",
+                        "symbols_mainCard.ScaleX() * Variable(symbolScaleMultiply)",
+                        "\"easeOutBounce\"",
+                        "1500",
+                        "",
+                        "yes"
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "symbols_mainCard"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ToggleObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "symbols_mainCard",
+                            "isPlaced"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 }
               ]
             }
           ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "symbol1",
+                "isPlaced",
+                "False"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "symbol2",
+                "isPlaced",
+                "False"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "symbol3",
+                "isPlaced",
+                "False"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "symbol4",
+                "isPlaced",
+                "False"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ]
     },
@@ -1849,7 +1637,512 @@
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [],
-      "events": []
+      "events": [
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "position_placeholder_card1",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "position_placeholder_card1",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AjoutHasard"
+                  },
+                  "parameters": [
+                    "",
+                    "position_placeholder_card1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "position_placeholder_card1",
+                    "isUsed",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "position_placeholder_card1",
+                    "isUsed",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "symbols_card1",
+                        "isPlaced",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "symbols_card1",
+                        "=",
+                        "position_placeholder_card1.X()",
+                        "=",
+                        "position_placeholder_card1.Y()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "symbolScaleMultiply",
+                        "=",
+                        "RandomFloatInRange(0.6,1.8)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectScaleTween"
+                      },
+                      "parameters": [
+                        "symbols_card1",
+                        "Tween",
+                        "\"symbolCreate\"",
+                        "symbols_card1.ScaleX() * Variable(symbolScaleMultiply)",
+                        "symbols_card1.ScaleX() * Variable(symbolScaleMultiply)",
+                        "\"easeOutBounce\"",
+                        "1500",
+                        "",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "symbols_card1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ToggleObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "symbols_card1",
+                            "isPlaced"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "position_placeholder_card2",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "position_placeholder_card2",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AjoutHasard"
+                  },
+                  "parameters": [
+                    "",
+                    "position_placeholder_card2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "position_placeholder_card2",
+                    "isUsed",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "position_placeholder_card2",
+                    "isUsed",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "symbols_card2",
+                        "isPlaced",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "symbols_card2",
+                        "=",
+                        "position_placeholder_card2.X()",
+                        "=",
+                        "position_placeholder_card2.Y()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "symbolScaleMultiply",
+                        "=",
+                        "RandomFloatInRange(0.6,1.8)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectScaleTween"
+                      },
+                      "parameters": [
+                        "symbols_card2",
+                        "Tween",
+                        "\"symbolCreate\"",
+                        "symbols_card2.ScaleX() * Variable(symbolScaleMultiply)",
+                        "symbols_card2.ScaleX() * Variable(symbolScaleMultiply)",
+                        "\"easeOutBounce\"",
+                        "1500",
+                        "",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "symbols_card2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ToggleObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "symbols_card2",
+                            "isPlaced"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "position_placeholder_card3",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "position_placeholder_card3",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AjoutHasard"
+                  },
+                  "parameters": [
+                    "",
+                    "position_placeholder_card3"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "position_placeholder_card3",
+                    "isUsed",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "position_placeholder_card3",
+                    "isUsed",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "symbols_card3",
+                        "isPlaced",
+                        "False"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "symbols_card3",
+                        "=",
+                        "position_placeholder_card3.X()",
+                        "=",
+                        "position_placeholder_card3.Y()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "symbolScaleMultiply",
+                        "=",
+                        "RandomFloatInRange(0.6,1.8)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectScaleTween"
+                      },
+                      "parameters": [
+                        "symbols_card3",
+                        "Tween",
+                        "\"symbolCreate\"",
+                        "symbols_card3.ScaleX() * Variable(symbolScaleMultiply)",
+                        "symbols_card3.ScaleX() * Variable(symbolScaleMultiply)",
+                        "\"easeOutBounce\"",
+                        "1500",
+                        "",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AjoutHasard"
+                          },
+                          "parameters": [
+                            "",
+                            "symbols_card3"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ToggleObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "symbols_card3",
+                            "isPlaced"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -1894,6 +2187,17 @@
       "isLightingLayer": false,
       "name": "Box backgrounds",
       "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": -2147483632,
+      "ambientLightColorG": 6032160,
+      "ambientLightColorR": 8368056,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Box borders",
+      "visibility": false,
       "cameras": [],
       "effects": []
     },
